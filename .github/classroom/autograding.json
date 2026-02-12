@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "name": "Accept Text Input",
+      "run": "PYTHONPATH=. pytest tests/test_assignment.py::test_accept_text_input",
+      "points": 5
+    },
+    {
+      "name": "Accept Alphanumeric Input",
+      "run": "PYTHONPATH=. pytest tests/test_assignment.py::test_accept_alphanumeric_input",
+      "points": 5
+    },
+    {
+      "name": "Accept Alphanumeric Convert",
+      "run": "PYTHONPATH=. pytest tests/test_assignment.py::test_accept_alphanumeric_input_convert",
+      "points": 5
+    },
+    {
+      "name": "Add Two Numbers",
+      "run": "PYTHONPATH=. pytest tests/test_assignment.py::test_add_two_numbers",
+      "points": 5
+    },
+    {
+      "name": "Floor Division",
+      "run": "PYTHONPATH=. pytest tests/test_assignment.py::test_floor_division",
+      "points": 5
+    },
+    {
+      "name": "Compare Numbers",
+      "run": "PYTHONPATH=. pytest tests/test_assignment.py::test_compare_numbers",
+      "points": 3
+    },
+    {
+      "name": "BMI Calculation",
+      "run": "PYTHONPATH=. pytest tests/test_assignment.py::test_calc_bmi",
+      "points": 7
+    }
+  ]
+}
