@@ -29,6 +29,10 @@ jobs:
         run: |
           jupyter nbconvert --to python assignment.ipynb
 
+      - name: Show generated assignment.py
+        run: |
+          cat assignment.py
+
       - name: Show files after conversion
         run: |
            ls -la
