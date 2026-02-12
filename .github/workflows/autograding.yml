@@ -29,6 +29,10 @@ jobs:
         run: |
           jupyter nbconvert --to python assignment.ipynb
 
+      - name: Show files after conversion
+        run: |
+           ls -la
+
       - name: Run tests
         run: |
           PYTHONPATH=. pytest tests/
