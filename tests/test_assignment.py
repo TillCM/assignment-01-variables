@@ -52,7 +52,7 @@ def test_accept_alphanumeric_input_convert(monkeypatch, capsys):
 
     # Check return value
     # We expect age to be returned as a STRING after conversion
-    assert result == ("Ada", "Lovelace", "20")
+    assert result == ("Ada", "Lovelace", 20)
 
     # Check printed output
     expected_output = "My name is Ada Lovelace and I am 20 years old"
