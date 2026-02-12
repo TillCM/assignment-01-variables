@@ -32,7 +32,7 @@ def test_accept_alphanumeric_input(monkeypatch, capsys):
     captured = capsys.readouterr()
 
     # Check return value
-    assert result == ("Ada", "Lovelace", "20")
+    assert result == ("Ada", "Lovelace", 20)
 
     # Check printed output
     expected_output = "My name is Ada Lovelace and I am 20 years old"
