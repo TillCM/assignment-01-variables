@@ -27,7 +27,7 @@ jobs:
 
       - name: Convert notebook to script
         run: |
-          jupyter nbconvert --to script assignment.ipynb
+          jupyter nbconvert --to python assignment.ipynb
 
       - name: Run tests
         run: |
