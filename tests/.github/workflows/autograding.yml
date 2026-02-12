@@ -1,0 +1,33 @@
+name: Autograding
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Execute notebook
+        run: |
+          jupyter nbconvert --execute --to notebook assignment.ipynb
+
+      - name: Convert notebook to script
+        run: |
+          jupyter nbconvert --to script assignment.ipynb
+
+      - name: Run tests
+        run: |
+          pytest tests/
